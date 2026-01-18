@@ -1,17 +1,17 @@
 {
-	"node": "n8n-nodes-example",
+	"node": "n8n-nodes-topfact-archiv",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Development", "Developer Tools"],
+	"categories": ["Data & Storage"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://github.com/org/repo?tab=readme-ov-file#credentials"
+				"url": "https://services.topfact.de/tic"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://github.com/org/repo?tab=readme-ov-file"
+				"url": "https://services.topfact.de/tic"
 			}
 		]
 	}

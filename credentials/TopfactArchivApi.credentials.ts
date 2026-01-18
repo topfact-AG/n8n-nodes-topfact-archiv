@@ -1,5 +1,3 @@
-/* eslint-disable n8n-nodes-base/cred-class-field-display-name-missing-api */
-/* eslint-disable n8n-nodes-base/cred-class-field-display-name-miscased */
 import type {
 	IAuthenticateGeneric,
 	ICredentialTestRequest,
@@ -11,7 +9,7 @@ import type {
 export class TopfactArchivApi implements ICredentialType {
 	name = 'topfactArchivApi';
 
-	displayName = 'topfact Archiv Logon';
+	displayName = 'Topfact Archiv Logon API';
 
 	icon: Icon = 'file:topfact.svg';
 

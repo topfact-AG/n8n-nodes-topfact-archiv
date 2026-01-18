@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-topfact-archiv",
-    "version": "0.3.3",
+    "version": "0.4.2",
     "description": "topfact Archiv Node für n8n",
     "license": "MIT",
     "homepage": "https://topfact.de",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/dein-username/n8n-nodes-topfact-archiv.git"
+        "url": "https://github.com/topfact/n8n-nodes-topfact-archiv.git"
     },
     "scripts": {
         "build": "n8n-node build",
@@ -30,7 +30,7 @@
         "n8nNodesApiVersion": 1,
         "strict": true,
         "credentials": [
-            "dist/credentials/TopfactArchiv.credentials.js"
+            "dist/credentials/TopfactArchivApi.credentials.js"
         ],
         "nodes": [
             "dist/nodes/TopfactArchiv/TopfactArchiv.node.js"

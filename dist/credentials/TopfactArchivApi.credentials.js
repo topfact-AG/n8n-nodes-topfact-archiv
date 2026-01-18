@@ -53,4 +53,4 @@ class TopfactArchivApi {
     }
 }
 exports.TopfactArchivApi = TopfactArchivApi;
-//# sourceMappingURL=TopfactArchiv.credentials.js.map
+//# sourceMappingURL=TopfactArchivApi.credentials.js.map
