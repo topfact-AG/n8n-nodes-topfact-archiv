@@ -4,6 +4,8 @@ exports.TopfactArchiv = void 0;
 const n8n_workflow_1 = require("n8n-workflow");
 const getArchives_1 = require("./operations/getArchives");
 const searchDocuments_1 = require("./operations/searchDocuments");
+const getUser_1 = require("./operations/getUser");
+const getVersion_1 = require("./operations/getVersion");
 class TopfactArchiv {
     constructor() {
         this.description = {
@@ -23,6 +25,9 @@ class TopfactArchiv {
                 {
                     name: 'topfactArchivApi',
                     required: true,
+                    displayOptions: {
+                        show: {},
+                    },
                 },
             ],
             properties: [
@@ -37,6 +42,18 @@ class TopfactArchiv {
                             value: 'getArchives',
                             description: 'Get all available archives',
                             action: 'Get all archives',
+                        },
+                        {
+                            name: 'Get User',
+                            value: 'getUser',
+                            description: 'Get current user information',
+                            action: 'Get user information',
+                        },
+                        {
+                            name: 'Get Version',
+                            value: 'getVersion',
+                            description: 'Get API version information',
+                            action: 'Get version information',
                         },
                         {
                             name: 'Search Documents',
@@ -100,6 +117,14 @@ class TopfactArchiv {
                 if (operation === 'getArchives') {
                     const archives = await getArchives_1.getArchives.call(this);
                     returnData.push(...archives);
+                }
+                else if (operation === 'getUser') {
+                    const user = await getUser_1.getUser.call(this);
+                    returnData.push(...user);
+                }
+                else if (operation === 'getVersion') {
+                    const version = await getVersion_1.getVersion.call(this);
+                    returnData.push(...version);
                 }
                 else if (operation === 'searchDocuments') {
                     const documents = await searchDocuments_1.searchDocuments.call(this, i);

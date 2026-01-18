@@ -1,10 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TopfactArchivApi = void 0;
 class TopfactArchivApi {
     constructor() {
         this.name = 'topfactArchivApi';
-        this.displayName = 'topfact Archiv Logon';
+        this.displayName = 'Topfact Archiv Logon API';
         this.icon = 'file:topfact.svg';
         this.documentationUrl = 'https://services.topfact.de//tic';
         this.properties = [
@@ -52,5 +51,5 @@ class TopfactArchivApi {
         };
     }
 }
-exports.TopfactArchivApi = TopfactArchivApi;
+exports.default = TopfactArchivApi;
 //# sourceMappingURL=TopfactArchivApi.credentials.js.map

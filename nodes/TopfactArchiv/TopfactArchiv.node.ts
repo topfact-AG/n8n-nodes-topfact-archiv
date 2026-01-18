@@ -8,6 +8,7 @@ import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
 import { getArchives } from './operations/getArchives';
 import { searchDocuments } from './operations/searchDocuments';
 import { getUser } from './operations/getUser';
+import { getVersion } from './operations/getVersion';
 
 export class TopfactArchiv implements INodeType {
 	description: INodeTypeDescription = {
@@ -27,6 +28,9 @@ export class TopfactArchiv implements INodeType {
 			{
 				name: 'topfactArchivApi',
 				required: true,
+				displayOptions: {
+					show: {},
+				},
 			},
 		],
 		properties: [
@@ -47,6 +51,12 @@ export class TopfactArchiv implements INodeType {
 						value: 'getUser',
 						description: 'Get current user information',
 						action: 'Get user information',
+					},
+					{
+						name: 'Get Version',
+						value: 'getVersion',
+						description: 'Get API version information',
+						action: 'Get version information',
 					},
 					{
 						name: 'Search Documents',
@@ -115,6 +125,9 @@ export class TopfactArchiv implements INodeType {
 				} else if (operation === 'getUser') {
 					const user = await getUser.call(this);
 					returnData.push(...user);
+				} else if (operation === 'getVersion') {
+					const version = await getVersion.call(this);
+					returnData.push(...version);
 				} else if (operation === 'searchDocuments') {
 					const documents = await searchDocuments.call(this, i);
 					returnData.push(...documents);

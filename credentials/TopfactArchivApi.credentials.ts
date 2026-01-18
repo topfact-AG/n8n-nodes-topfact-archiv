@@ -6,7 +6,7 @@ import type {
 	Icon,
 } from 'n8n-workflow';
 
-export class TopfactArchivApi implements ICredentialType {
+class TopfactArchivApi implements ICredentialType {
 	name = 'topfactArchivApi';
 
 	displayName = 'Topfact Archiv Logon API';
@@ -61,3 +61,5 @@ export class TopfactArchivApi implements ICredentialType {
 		},
 	};
 }
+
+export default TopfactArchivApi;
