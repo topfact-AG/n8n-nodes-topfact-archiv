@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-topfact-archiv",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "description": "topfact Archiv Node für n8n",
     "license": "MIT",
     "homepage": "https://topfact.de",

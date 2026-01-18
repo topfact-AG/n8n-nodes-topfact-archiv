@@ -1,11 +1,11 @@
 {
 	"name": "n8n-nodes-topfact-archiv",
 	"version": "0.3.3",
-	"description": "topfact Archiv Node für n8n",
+	"description": "topfact Archiv Node for n8n",
 	"license": "MIT",
 	"homepage": "https://topfact.de",
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package", "topfact", "Archiv", "DMS", "MyWork"
 	],
 	"author": {
 		"name": "topfact AG",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dein-username/n8n-nodes-topfact-archiv.git"
+		"url": "https://github.com/topfact-AG/n8n-nodes-topfact-archiv.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
